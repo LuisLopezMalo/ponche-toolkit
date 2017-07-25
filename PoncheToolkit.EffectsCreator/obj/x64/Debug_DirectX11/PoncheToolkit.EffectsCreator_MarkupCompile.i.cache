@@ -1,0 +1,20 @@
+﻿PoncheToolkit.EffectsCreator
+
+
+winexe
+C#
+.cs
+C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\obj\x64\Debug_DirectX11\
+PoncheToolkit.EffectsCreator
+none
+false
+DEBUG;TRACE
+C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\App.xaml
+12-214476371
+3196426897
+431090608
+881047502900
+Controls\OpenFileDialogButton.xaml;Controls\CustomButton.xaml;MainWindow.xaml;Controls\CustomRichTextBox.xaml;Controls\ParameterGroup.xaml;Views\MainMenuView.xaml;Views\MainMenu\AddComponentPopupView.xaml;Views\ParameterView.xaml;Controls\CustomTextBox.xaml;Views\RenderView.xaml;Views\ShaderView.xaml;Controls\ParameterSingle.xaml;
+
+True
+

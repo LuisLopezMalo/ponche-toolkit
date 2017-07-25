@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDFE6272-CFC6-4E6A-BB62-F3F58FC1037D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PoncheToolkit</RootNamespace>
+    <AssemblyName>PoncheToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PTKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX11|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX11</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX11|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX11;BUILD_x64</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\x64\Debug_DirectX11\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX11|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX11;BUILD_x86</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\x86\Debug_DirectX11\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX12|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_DirectX12\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX12</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX12|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_DirectX12\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX12;BUILD_x64</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX12|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug_DirectX12\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DX12;BUILD_x86</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\PoncheToolkit.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX11|AnyCPU'">
+    <OutputPath>bin\Release_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DX11</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX11|x64'">
+    <OutputPath>bin\x64\Release_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DX11;BUILD_x64</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX11|x86'">
+    <OutputPath>bin\x86\Release_DirectX11\</OutputPath>
+    <DefineConstants>TRACE;DX11;BUILD_x86</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX12|AnyCPU'">
+    <OutputPath>bin\Release_DirectX12\</OutputPath>
+    <DefineConstants>TRACE;DX12</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX12|x64'">
+    <OutputPath>bin\x64\Release_DirectX12\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>DX12;BUILD_x64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX12|x86'">
+    <OutputPath>bin\x86\Release_DirectX12\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>DX12;BUILD_x86</DefineConstants>
+  </PropertyGroup>
+  <!-- ADDED -->
+  <PropertyGroup>
+    <CurrentPlatform>x86</CurrentPlatform>
+    <CurrentPlatform Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX11|x64'">x64</CurrentPlatform>
+    <CurrentPlatform Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX11|x64'">x64</CurrentPlatform>
+    <CurrentPlatform Condition="'$(Configuration)|$(Platform)' == 'Debug_DirectX12|x64'">x64</CurrentPlatform>
+    <CurrentPlatform Condition="'$(Configuration)|$(Platform)' == 'Release_DirectX12|x64'">x64</CurrentPlatform>
+    <!-- <CurrentPlatform Condition="'$(BUILD_x64)' == 'TRUE'">x64</CurrentPlatform> -->
+    <!-- <CurrentPlatform Condition="'$(PROCESSOR_ARCHITECTURE)'=='AMD64' or '$(PROCESSOR_ARCHITEW6432)'=='AMD64'">x64</CurrentPlatform> -->
+  </PropertyGroup>
+  <!-- ADDED -->
+  <ItemGroup>
+    <!-- ADDED
+	<Reference Include="AssimpNet, Version=3.3.2.0, Culture=neutral, PublicKeyToken=3edc10cb77b1bca2, processorArchitecture=MSIL">
+      <HintPath>..\packages\AssimpNet.3.3.2\lib\net45\AssimpNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+	ADDED -->
+    <Reference Include="AssimpNet, Version=3.3.2.0, Culture=neutral, PublicKeyToken=3edc10cb77b1bca2, processorArchitecture=MSIL">
+      <HintPath>..\packages\AssimpNet.3.3.2\lib\net45\AssimpNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Wpf.Interop.DirectX, Version=0.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=AMD64">
+      <HintPath>..\packages\Microsoft.Wpf.Interop.DirectX-x64.0.9.0-beta-22856\lib\net45\Microsoft.Wpf.Interop.DirectX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.0-betaV15\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.3.1.1\lib\net45\SharpDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Animation, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Animation.3.1.1\lib\net45\SharpDX.Animation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.D3DCompiler.3.1.1\lib\net45\SharpDX.D3DCompiler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Desktop, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Desktop.3.1.1\lib\net45\SharpDX.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.3.1.1\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.3.1.1\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11.Effects, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.Effects.3.1.1\lib\net45\SharpDX.Direct3D11.Effects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D12, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D12.3.1.1\lib\net45\SharpDX.Direct3D12.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D9.3.1.1\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectComposition, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectComposition.3.1.1\lib\net45\SharpDX.DirectComposition.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectInput.3.1.1\lib\net45\SharpDX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectManipulation, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectManipulation.3.1.1\lib\net45\SharpDX.DirectManipulation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectSound, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectSound.3.1.1\lib\net45\SharpDX.DirectSound.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.3.1.1\lib\net45\SharpDX.DXGI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.3.1.1\lib\net45\SharpDX.Mathematics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.MediaFoundation.3.1.1\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.RawInput, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.RawInput.3.1.1\lib\net45\SharpDX.RawInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XAudio2.3.1.1\lib\net45\SharpDX.XAudio2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XInput.3.1.1\lib\net45\SharpDX.XInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Components\GameComponent.cs" />
+    <Compile Include="Core\Components\GameComponentsCollection.cs" />
+    <Compile Include="Core\Components\GameRenderableComponent.cs" />
+    <Compile Include="Core\Game.cs" />
+    <Compile Include="Core\Game11.cs" />
+    <Compile Include="Core\Components\IGameComponent.cs" />
+    <Compile Include="Core\Game12.cs" />
+    <Compile Include="Core\GameSettings.cs" />
+    <Compile Include="Core\IGraphicsRenderer12.cs" />
+    <Compile Include="Core\IGraphicsRenderer11.cs" />
+    <Compile Include="Core\IGraphicsRenderer.cs" />
+    <Compile Include="Core\IInputReceivable.cs" />
+    <Compile Include="Core\IContentLoadable.cs" />
+    <Compile Include="Core\IInitializable.cs" />
+    <Compile Include="Core\IShaderLoadable.cs" />
+    <Compile Include="Core\IUpdatableLogic.cs" />
+    <Compile Include="Core\IUpdatableProperties.cs" />
+    <Compile Include="Core\Management\Content\ContentManager12.cs" />
+    <Compile Include="Core\Management\Content\ContentsPool.cs" />
+    <Compile Include="Core\Management\Content\IContentItem.cs" />
+    <Compile Include="Core\Management\Content\ContentManager11.cs" />
+    <Compile Include="Core\Management\Content\IContentManager12.cs" />
+    <Compile Include="Core\Management\Content\IContentManager11.cs" />
+    <Compile Include="Core\Management\Content\IContentManager.cs" />
+    <Compile Include="Core\Management\Content\PTInclude.cs" />
+    <Compile Include="Core\Management\Input\InputManager.cs" />
+    <Compile Include="Core\Management\LoadManager.cs" />
+    <Compile Include="Core\Management\Screen\GameScreen.cs" />
+    <Compile Include="Core\Management\Screen\GameScreenManager.cs" />
+    <Compile Include="Core\Management\Menu\MenuManager.cs" />
+    <Compile Include="Core\Management\ApplicationStateManager.cs" />
+    <Compile Include="Core\Management\Sound\SoundManager.cs" />
+    <Compile Include="Core\Management\Text\CustomFontFileEnumerator.cs" />
+    <Compile Include="Core\Management\Text\CustomFontFileStream.cs" />
+    <Compile Include="Core\Management\Text\CustomFontLoader.cs" />
+    <Compile Include="Core\Management\Threading\ThreadingManager.cs" />
+    <Compile Include="Core\Services\GameService.cs" />
+    <Compile Include="Core\Services\GameServicesCollection.cs" />
+    <Compile Include="Core\Services\IGameService.cs" />
+    <Compile Include="Core\IUpdatableState.cs" />
+    <Compile Include="Core\WPF\GameWpf.cs" />
+    <Compile Include="Graphics2D\Animation\Animation2DSingleFrame.cs" />
+    <Compile Include="Graphics2D\Animation\AnimatedSprite.cs" />
+    <Compile Include="Graphics2D\Animation\Animation2DManager.cs" />
+    <Compile Include="Graphics2D\Animation\Animation2DFrameCount.cs" />
+    <Compile Include="Graphics2D\Animation\Animation2DFrameRange.cs" />
+    <Compile Include="Graphics2D\Animation\Animation2D.cs" />
+    <Compile Include="Graphics2D\Effects\CustomEffectsProperties.cs" />
+    <Compile Include="Graphics2D\Effects\MatricesStruct2D.cs" />
+    <Compile Include="Graphics2D\Effects\PTCustomEffect.cs" />
+    <Compile Include="Graphics2D\Effects\PTEdgeDetectionEffect.cs" />
+    <Compile Include="Graphics2D\Effects\PTShadowRenderEffect.cs" />
+    <Compile Include="Graphics2D\Effects\PTShadowMapEffect.cs" />
+    <Compile Include="Graphics2D\Effects\PTRippleEffect.cs" />
+    <Compile Include="Graphics2D\Lighting\Light2D.cs" />
+    <Compile Include="Core\Services\Dynamic2DLightManagerService.cs" />
+    <Compile Include="Graphics2D\Sprite.cs" />
+    <Compile Include="Graphics2D\MatricesStruct2D.cs" />
+    <Compile Include="Graphics2D\PTFont.cs" />
+    <Compile Include="Graphics2D\SpriteBatch.cs" />
+    <Compile Include="Graphics2D\PTTexture2D.cs" />
+    <Compile Include="Graphics3D\Assimp\AssimpMaterial.cs" />
+    <Compile Include="Graphics3D\Cameras\ICamera.cs" />
+    <Compile Include="Graphics3D\Cameras\ReflectionCamera.cs" />
+    <Compile Include="Graphics3D\DeviceManager.cs" />
+    <Compile Include="Graphics3D\Effects\ClusteredGlobalStruct.cs" />
+    <Compile Include="Graphics3D\Effects\GlobalDataStruct.cs" />
+    <Compile Include="Graphics3D\Effects\IPTEffect12.cs" />
+    <Compile Include="Graphics3D\Effects\IPTEffect11.cs" />
+    <Compile Include="Graphics3D\Effects\IPTEffect.cs" />
+    <Compile Include="Graphics3D\Effects\LightBufferStruct.cs" />
+    <Compile Include="Graphics3D\Effects\MaterialStruct.cs" />
+    <Compile Include="Graphics3D\Effects\MatricesStructPerFrame.cs" />
+    <Compile Include="Graphics3D\Effects\MatricesStructPerObject.cs" />
+    <Compile Include="Graphics3D\Effects\PTClusteredForwardRenderEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTDualParaboloidReflectionEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTEffect12.cs" />
+    <Compile Include="Graphics3D\Effects\PTEffect11.cs" />
+    <Compile Include="Graphics3D\Effects\PTPostProcessEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTLinkingForwardRenderEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTLightTorch.cs" />
+    <Compile Include="Graphics3D\Effects\PTToonEffect.cs" />
+    <Compile Include="Graphics3D\Effects\PTLight.cs" />
+    <Compile Include="Graphics3D\Effects\LightStruct.cs" />
+    <Compile Include="Graphics3D\Effects\PerObjectStruct.cs" />
+    <Compile Include="Graphics3D\Effects\PerInstanceStruct.cs" />
+    <Compile Include="Graphics3D\Effects\PTMaterial.cs" />
+    <Compile Include="Graphics3D\Effects\ClipPlainStruct.cs" />
+    <Compile Include="Graphics3D\Effects\ReflectionStruct.cs" />
+    <Compile Include="Graphics3D\GraphicsRenderer11.cs" />
+    <Compile Include="Graphics3D\GraphicsRenderer12.cs" />
+    <Compile Include="Graphics3D\PTBone.cs" />
+    <Compile Include="Graphics3D\PTFace.cs" />
+    <Compile Include="Graphics3D\Assimp\MaterialProperty.cs" />
+    <Compile Include="Graphics3D\Assimp\MaterialTexture.cs" />
+    <Compile Include="Graphics3D\PTGBuffer.cs" />
+    <Compile Include="Graphics3D\PTMesh.cs" />
+    <Compile Include="Graphics3D\Assimp\MeshAnimationAttachment.cs" />
+    <Compile Include="Graphics3D\Assimp\VertexWeight.cs" />
+    <Compile Include="Graphics3D\Cameras\Camera.cs" />
+    <Compile Include="Graphics3D\Cameras\FirstPersonCamera.cs" />
+    <Compile Include="Graphics3D\Cameras\FreeCamera.cs" />
+    <Compile Include="Graphics3D\Cameras\ThirdPersonCamera.cs" />
+    <Compile Include="Graphics3D\Effects\PTForwardRenderEffect.cs" />
+    <Compile Include="Graphics3D\Effects\MatricesStruct.cs" />
+    <Compile Include="Graphics3D\Effects\PTShader.cs" />
+    <Compile Include="Graphics2D\VertexMainStruct2D.cs" />
+    <Compile Include="Graphics3D\PTRenderTarget2D.cs" />
+    <Compile Include="Graphics3D\PTTexturePath.cs" />
+    <Compile Include="Graphics3D\VertexMainStruct.cs" />
+    <Compile Include="Graphics3D\VertexPositionColorStruct.cs" />
+    <Compile Include="Graphics3D\VertexPositionTextureStruct .cs" />
+    <Compile Include="Core\IRenderable.cs" />
+    <Compile Include="Graphics3D\PTModel.cs" />
+    <Compile Include="Graphics3D\ModelPiece.cs" />
+    <Compile Include="Graphics3D\Primitives\Cube.cs" />
+    <Compile Include="Graphics3D\Primitives\Primitive.cs" />
+    <Compile Include="Graphics3D\Primitives\Sphere.cs" />
+    <Compile Include="Graphics3D\Primitives\Square.cs" />
+    <Compile Include="Graphics3D\Primitives\Triangle.cs" />
+    <Compile Include="Graphics3D\PTRasterizer.cs" />
+    <Compile Include="Graphics3D\RayProjection.cs" />
+    <Compile Include="Graphics3D\XmlSerializationTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Services\DebuggerRenderableService.cs" />
+    <Compile Include="Resources\ExceptionTexts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExceptionTexts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ArrayMarshaller.cs" />
+    <Compile Include="Util\Enums.cs" />
+    <Compile Include="Util\EventHandlers.cs" />
+    <Compile Include="Util\Exceptions\ComponentNotInitializedException.cs" />
+    <Compile Include="Util\Exceptions\CustomSerializationException.cs" />
+    <Compile Include="Util\Exceptions\RenderingException.cs" />
+    <Compile Include="Util\Exceptions\PoncheException.cs" />
+    <Compile Include="Util\Exceptions\LoadContentException.cs" />
+    <Compile Include="Util\Exceptions\ResourceNotSupportedException.cs" />
+    <Compile Include="Util\Exceptions\ResourceCompilationException.cs" />
+    <Compile Include="Util\Exceptions\DeviceCreationException.cs" />
+    <Compile Include="Util\Exceptions\DuplicateComponentException.cs" />
+    <Compile Include="Util\Exceptions\DuplicateServiceException.cs" />
+    <Compile Include="Core\Services\GameTime.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Util\ILoggable.cs" />
+    <Compile Include="Util\Logger.cs" />
+    <Compile Include="Util\Reflection\PTSerializableClassAttribute.cs" />
+    <Compile Include="Util\Reflection\PTSerializablePropertyAttribute.cs" />
+    <Compile Include="Util\Reflection\PTSerializationElement.cs" />
+    <Compile Include="Util\Reflection\PTSerializer.cs" />
+    <Compile Include="Util\UpdatableStateObject.cs" />
+    <Compile Include="Util\WICHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assimp32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assimp64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <PTShaderFile Include="Content\cara1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </PTShaderFile>
+    <Content Include="Content\crate1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Dynamic\PTPS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Dynamic\PTVS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Dynamic\PTStructs.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PostProcess\PTEdgeDetectionEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PostProcess\PTShadowMapEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PostProcess\PTShadowRenderEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PostProcess\PTRippleEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTBasicEffect_BAK.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTBasicInstancingEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTClusteredForwardRenderEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTClusteredHelper.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTBumpMapped.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingBuffersPS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingDeclarations.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Dynamic\PTImplementationPS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTToonPS .fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTForwardRenderingVS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTForwardRenderingPS.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTToonImplementation.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingImplementation.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingPSBuffers.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingClasses.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLinkingInterfaces.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTToonEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTForwardRenderEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTPerObjectVertexShader.hlsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTPerFrameVertexShader.hlsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTDeclarations.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTLightingHelper.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTSpriteEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\metal1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Models\duck\duckCM.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Models\head.tga">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Models\jacket.tga">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\Models\nano_suit\arm_dif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\arm_showroom_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\arm_showroom_spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\body_dif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\body_showroom_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\body_showroom_spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\glass_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\glass_dif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\hand_dif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\hand_showroom_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\hand_showroom_spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\helmet_diff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\helmet_showroom_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\helmet_showroom_spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\leg_dif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\leg_showroom_ddn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\leg_showroom_spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\Models\pants.tga">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Models\upBodyC.tga">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTColorEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PTTextureEffect.fx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="app.config" />
+    <None Include="ClassDiagramMain.cd" />
+    <None Include="Content\crate1.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dog_ascii.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dog_ascii_2013.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dog_binary.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dog_binary_2012.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dog_dae.dae">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\duck\duck.dae">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\dude.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\max_1.FBX">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\max_2.FBX">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\max_2_ascii.FBX">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\maya_1.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\maya_2.fbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\nanosuit.mtl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Models\nano_suit\nanosuit.obj">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="NLog - BAK.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PTKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExceptionTexts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionTexts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="PT.targets" />
+  <Target Name="BeforeResGen">
+  </Target>
+  <Target Name="AfterResGen">
+    <Message Text="Resources generated" />
+  </Target>
+  <Import Project="..\packages\AssimpNet.3.3.2\build\AssimpNet.targets" Condition="Exists('..\packages\AssimpNet.3.3.2\build\AssimpNet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AssimpNet.3.3.2\build\AssimpNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AssimpNet.3.3.2\build\AssimpNet.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- ADDED -->
+  <Target Name="CopyNeededLibs" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <NeededLibs Include="$(SolutionDir)libs\$(CurrentPlatform)\d3dcompiler_47.dll" />
+    </ItemGroup>
+    <Message Text="Copying needed libraries..." Importance="high" />
+    <Copy SourceFiles="@(NeededLibs)" DestinationFolder="$(OutputPath)" />
+  </Target>
+  <Target Name="CleanNeededLibs" AfterTargets="Clean">
+    <Message Text="Cleaning needed libraries..." Importance="high" />
+    <Delete Files="$(TargetDir)d3dcompiler_47.dll" />
+  </Target>
+  <ItemGroup>
+    <None Include="$(SolutionDir)libs\$(CurrentPlatform)\d3dcompiler_47.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <!-- ADDED -->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

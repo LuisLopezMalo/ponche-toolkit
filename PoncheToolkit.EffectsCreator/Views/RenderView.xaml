@@ -1,0 +1,36 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:local="clr-namespace:PoncheToolkit.EffectsCreator.Views" 
+             xmlns:util="clr-namespace:PoncheToolkit.EffectsCreator.Util" 
+            xmlns:behaviors="clr-namespace:PoncheToolkit.EffectsCreator.Behaviors" 
+             xmlns:dx="clr-namespace:Microsoft.Wpf.Interop.DirectX;assembly=Microsoft.Wpf.Interop.DirectX"
+             x:Class="PoncheToolkit.EffectsCreator.Views.RenderView"
+             mc:Ignorable="d" 
+             x:Name="_this"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid x:Name="grid_renderMain">
+        <Grid x:Name="grid" DataContext="{Binding DataContext.RenderViewModel, ElementName=_this}" Background="#4C5B9AB8" 
+              behaviors:MouseBehaviors.MouseLeftButtonUpCommand="{Binding Render_MouseLeftButtonUpCommand}"
+              behaviors:MouseBehaviors.MouseLeftButtonDownCommand="{Binding Render_MouseLeftButtonDownCommand}"
+              behaviors:MouseBehaviors.MouseMoveCommand="{Binding Render_MouseMoveCommand}"
+              behaviors:MouseBehaviors.MouseWheelCommand="{Binding Render_MouseWheelCommand}"
+              behaviors:ControlsBehaviors.SizeChangedCommand="{Binding Render_SizeChangedCommand}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding Render_LoadedCommand}" CommandParameter="{Binding ElementName=_this}" />
+                </i:EventTrigger>
+                <!--<i:EventTrigger EventName="SizeChanged">
+                    <i:InvokeCommandAction Command="{Binding Render_SizeChangedCommand}" CommandParameter="{Binding DataContext, ElementName=_this}" />
+                </i:EventTrigger>-->
+            </i:Interaction.Triggers>
+
+            <Rectangle Fill="#FFAEE38F" />
+            <Image x:Name="ImageHost" Stretch="Fill" Source="{Binding InteropImage, Mode=OneWay}" />
+        </Grid>
+    </Grid>
+</UserControl>

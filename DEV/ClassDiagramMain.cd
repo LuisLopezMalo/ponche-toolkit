@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PoncheToolkit.Core.Game" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="PoncheToolkit.Core.Game.OnInitializedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PoncheToolkit.Core.Game.OnCameraAddedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gQQBEAAEQCBAAciCAAAKwAQAAMiEAAAEiBQgBcEUYQY=</HashCode>
+      <FileName>Core\Game.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PoncheToolkit.Core.Components.GameComponent" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="PoncheToolkit.Core.Components.GameComponent.OnInitializedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Components\GameComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PoncheToolkit.Core.Components.GameComponent.OnFinishLoadContentHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Components\GameComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAQAAAAAAAAQAAAwAAAAACAAABAAAAAQ=</HashCode>
+      <FileName>Core\Components\GameComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PoncheToolkit.Core.Components.GameDrawableComponent" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.75" />
+    <InheritanceLine Type="PoncheToolkit.Core.Components.GameComponent" FixedToPoint="true">
+      <Path>
+        <Point X="1.625" Y="2.562" />
+        <Point X="1.625" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAQ=</HashCode>
+      <FileName>Core\Components\GameDrawableComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PoncheToolkit.Core.Management.ApplicationStateManager">
+    <Position X="11.75" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PoncheToolkit.Core.Management.ApplicationStateManager.ApplicationState">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Management\ApplicationStateManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAAAAACAAAAAgAAAECAAAAAAAAAA=</HashCode>
+      <FileName>Core\Management\ApplicationStateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Management.Menu.MenuManager">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Core\Management\Menu\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Util.Logger" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYACAAAAABAAAAAAAAAAAAAABEAAAAA=</HashCode>
+      <FileName>Util\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Services.Debugger">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="PoncheToolkit.Core.Services.Debugger.OnFPSCapturedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Services\Debugger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQgAAAAQAAASAAAAAAAACBAAAAAAAAA=</HashCode>
+      <FileName>Core\Services\Debugger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Services.GameService" Collapsed="true">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAAAAAAQAAAgAAAAACAAABAAAAAA=</HashCode>
+      <FileName>Core\Services\GameService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PoncheToolkit.Core.Services.GameServicesCollection" Collapsed="true">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAEABAACAAAAAQAAABAAAAEAAAgACAAAEQ=</HashCode>
+      <FileName>Core\Services\GameServicesCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PoncheToolkit.Core.Services.GameTime">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="PoncheToolkit.Core.Services.GameTime.OnSecondElapsedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Services\GameTime.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAQgAAAAACEAQQhBAAAAQAAEAgAAAAAAKAAAAAAIQAA=</HashCode>
+      <FileName>Core\Services\GameTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Game11">
+    <Position X="5.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EASAAAAAACAEAQiAFAAKgAAAAgAAQIBgABGAYAABhAA=</HashCode>
+      <FileName>Core\Game11.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Management.Screen.GameScreenManager">
+    <Position X="14.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAAAAAAQAAAAAiAAACJAABAAAAAQ=</HashCode>
+      <FileName>Core\Management\Screen\GameScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoncheToolkit.Core.Management.Screen.GameScreen" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PoncheToolkit.Core.Management.Screen.GameScreen.ScreenState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Management\Screen\GameScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PoncheToolkit.Core.Management.Screen.GameScreen.ScreenUpdateMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Management\Screen\GameScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PoncheToolkit.Core.Management.Screen.GameScreen.ScreenRenderMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Management\Screen\GameScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACQAEAIAACAAAYAAEACAAAAAAAQAgAAECBAADAAAAAQ=</HashCode>
+      <FileName>Core\Management\Screen\GameScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PoncheToolkit.Core.Services.IGameService">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Core\Services\IGameService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PoncheToolkit.Core.Components.IGameComponent" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAQAAAAAAAAQAAAgAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Core\Components\IGameComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

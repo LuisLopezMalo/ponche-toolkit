@@ -1,0 +1,1506 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoncheToolkit.EffectsCreator</name>
+    </assembly>
+    <members>
+        <member name="T:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors">
+            <summary>
+            Class that contains common mouse behaviors and commands.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.MouseLeftButtonUpCommandProperty">
+            <summary>
+            Property for left mouse button up.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.SetMouseLeftButtonUpCommand(System.Windows.UIElement,System.Windows.Input.ICommand)">
+            <summary>
+            Set the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.GetMouseLeftButtonUpCommand(System.Windows.UIElement)">
+            <summary>
+            Get the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.MouseLeftButtonDownCommandProperty">
+            <summary>
+            Property for left mouse button up.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.SetMouseLeftButtonDownCommand(System.Windows.UIElement,System.Windows.Input.ICommand)">
+            <summary>
+            Set the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.GetMouseLeftButtonDownCommand(System.Windows.UIElement)">
+            <summary>
+            Get the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.MouseMoveCommandProperty">
+            <summary>
+            Property for left mouse button up.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.SetMouseMoveCommand(System.Windows.UIElement,System.Windows.Input.ICommand)">
+            <summary>
+            Set the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.GetMouseMoveCommand(System.Windows.UIElement)">
+            <summary>
+            Get the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.MouseWheelCommandProperty">
+            <summary>
+            Property for mouse wheel change.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.SetMouseWheelCommand(System.Windows.UIElement,System.Windows.Input.ICommand)">
+            <summary>
+            Set the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.MouseBehaviors.GetMouseWheelCommand(System.Windows.UIElement)">
+            <summary>
+            Get the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Behaviors.ControlsBehaviors">
+            <summary>
+            Class that contains common windows or controls behaviors and commands.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Behaviors.ControlsBehaviors.SizeChangedCommandProperty">
+            <summary>
+            Property for mouse wheel change.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.ControlsBehaviors.SetSizeChangedCommand(System.Windows.UIElement,System.Windows.Input.ICommand)">
+            <summary>
+            Set the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Behaviors.ControlsBehaviors.GetSizeChangedCommand(System.Windows.UIElement)">
+            <summary>
+            Get the left mouse button up property.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.OpenFileDialogButton">
+            <summary>
+            Interaction logic for CustomButton.xaml
+            </summary>
+            <summary>
+            OpenFileDialogButton
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.OpenFileDialogButton.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.OpenFileDialogButton.DialogFilterProperty">
+            <summary>
+            The DialogFilter property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.OpenFileDialogButton.DialogFilter">
+            <summary>
+            The DialogFilter value.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.OpenFileDialogButton.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.CustomButton">
+            <summary>
+            Interaction logic for CustomButton.xaml
+            </summary>
+            <summary>
+            CustomButton
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomButton.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomButton.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox">
+            <summary>
+            Interaction logic for CustomRichTextBox.xaml
+            </summary>
+            <summary>
+            CustomRichTextBox
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.#ctor(System.Windows.Documents.FlowDocument)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="document"></param>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.TextSelectionProperty">
+            <summary>
+            The selected text property
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.TextSelection">
+            <summary>
+            The selected text.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.TextProperty">
+            <summary>
+            Text attached property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.Text">
+            <summary>
+            Get or set the bindable text property for the RichTextBox.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.DocumentProperty">
+            <summary>
+            The Document dependency property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.Document">
+            <summary>
+            Get or set the Document property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.RTBContent">
+            <summary>
+            The content obtained from the RichTextBox.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.FrameworkElement.Initialized"></see> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized"></see> is set to true internally.
+            </summary>
+            <param title="e">The <see cref="T:System.Windows.RoutedEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomRichTextBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.ParameterGroup">
+            <summary>
+            Interaction logic for GroupParameter.xaml
+            </summary>
+            <summary>
+            ParameterGroup
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.ParametersProperty">
+            <summary>
+            The parameter name property
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.Parameters">
+            <summary>
+            The parameter name.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.GroupTitleProperty">
+            <summary>
+            The he group title header property
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.GroupTitle">
+            <summary>
+            The group title header to display in the expander.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.ParameterGroup.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.CustomTextBox">
+            <summary>
+            Interaction logic for ProjectTextBox.xaml
+            </summary>
+            <summary>
+            CustomTextBox
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomTextBox.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.CustomTextBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.ParameterSingle">
+            <summary>
+            Interaction logic for SingleParameter.xaml
+            </summary>
+            <summary>
+            ParameterSingle
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterNameProperty">
+            <summary>
+            The parameter name property
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterName">
+            <summary>
+            The parameter name.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterValueProperty">
+            <summary>
+            The parameter value property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterValue">
+            <summary>
+            The parameter value.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypeProperty">
+            <summary>
+            The parameter value property.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.OnParameterTypeChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Event raised when the property is created or changed.
+            Here the ParameterType is set so the type of control and its contets are created.
+            </summary>
+            <param name="d"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterType">
+            <summary>
+            The parameter value.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes">
+            <summary>
+            Enumeration with the types of parameters.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.None">
+            <summary>
+            Draws nothing.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Uneditable">
+            <summary>
+            Draw an uneditable text box.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Text">
+            <summary>
+            Draw a text box.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Integer">
+            <summary>
+            Draw a text box.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Combo">
+            <summary>
+            Draw a combo box.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.File">
+            <summary>
+            Put a file dialog.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Vector2">
+            <summary>
+            Create a Vector2 object.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Vector3">
+            <summary>
+            Create a Vector3 object.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes.Vector4">
+            <summary>
+            Create a Vector4 object.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.CustomContentProperty">
+            <summary>
+            The parameter value property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.CustomContent">
+            <summary>
+            The custom content to be shown depending on the selected ParameterType.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Controls.ParameterSingle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Converters.MultiMarginConverter">
+            <summary>
+            Class to convert specific margin values in XAML.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Converters.MultiMarginConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Converters.MultiMarginConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.MainWindow.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Resources.DialogTextResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.DialogTextResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.DialogTextResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.DialogTextResources.ImportModelTitle">
+            <summary>
+              Looks up a localized string similar to Import 3D model.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.DialogTextResources.OpenShaderTitle">
+            <summary>
+              Looks up a localized string similar to Open shader.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Resources.InformationTextResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.InformationTextResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.InformationTextResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.InformationTextResources.Compilation_NotCompiled">
+            <summary>
+              Looks up a localized string similar to Not compiled.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.InformationTextResources.Compilation_Success">
+            <summary>
+              Looks up a localized string similar to Compilation Success.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Resources.MenuTextResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.File">
+            <summary>
+              Looks up a localized string similar to _File.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.File_Exit">
+            <summary>
+              Looks up a localized string similar to _Exit.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.File_New">
+            <summary>
+              Looks up a localized string similar to _New.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.File_Save">
+            <summary>
+              Looks up a localized string similar to _Save.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.File_SaveAs">
+            <summary>
+              Looks up a localized string similar to SaveAs.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Help">
+            <summary>
+              Looks up a localized string similar to _Help.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import">
+            <summary>
+              Looks up a localized string similar to _Import.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add">
+            <summary>
+              Looks up a localized string similar to _Add.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Component">
+            <summary>
+              Looks up a localized string similar to _Component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Model">
+            <summary>
+              Looks up a localized string similar to _Model.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Primitive">
+            <summary>
+              Looks up a localized string similar to _Primitive.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Primitive_Cube">
+            <summary>
+              Looks up a localized string similar to Cube.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Primitive_Square">
+            <summary>
+              Looks up a localized string similar to Square.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Add_Primitive_Triangle">
+            <summary>
+              Looks up a localized string similar to Triangle.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_Shaders">
+            <summary>
+              Looks up a localized string similar to _Shaders.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Resources.MenuTextResources.Import_ShaderTemplate">
+            <summary>
+              Looks up a localized string similar to _Template.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen">
+            <summary>
+            The screen that has the model(s) to be rendered and applied the shader.
+            </summary>
+        </member>
+        <member name="E:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.OnFinishLoadRenderableComponents">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.#ctor(PoncheToolkit.Core.Game11)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="game"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.UpdateState">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.LoadShadersAndMaterials(PoncheToolkit.Core.Management.Content.IContentManager)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.AddRenderableScreenComponents">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2">
+            <summary>
+            Dictionary that notifies when an element has been added, removed or updated.
+            </summary>
+            <typeparam name="TKey">Type of the keys</typeparam>
+            <typeparam name="TValue">Type of the values</typeparam>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="dictionary"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="dictionary"></param>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Comparer">
+            <summary>
+            Comparer
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Count">
+            <summary>
+            Count
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Keys">
+            <summary>
+            Keys
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Item(`0)">
+            <summary>
+            Get the value by its key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Values">
+            <summary>
+            Values
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.KeyedDictionaryEntryCollection`1">
+            <summary>
+            Collection by key.
+            </summary>
+            <typeparam name="TKeyColl"></typeparam>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.KeyedDictionaryEntryCollection`1.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.KeyedDictionaryEntryCollection`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.KeyedDictionaryEntryCollection`1.GetKeyForItem(System.Collections.DictionaryEntry)">
+            <summary>
+            Geth the key for a given entry.
+            </summary>
+            <param name="entry"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Enumerator`2">
+            <summary>
+            Internal enumerator.
+            </summary>
+            <typeparam name="TKeyEnum">Key</typeparam>
+            <typeparam name="TValueEnum">Value</typeparam>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Enumerator`2.Current">
+            <summary>
+            Get the current KeyValuePair
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Enumerator`2.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2.Enumerator`2.MoveNext">
+            <summary>
+            Move to the next value in dictionary.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.Entities.ObservableDictionary`2._keyedEntryCollection">
+            <summary>
+            Key entry collection
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Entities.ObservableObject">
+            <summary>
+            ViewModel base class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Entities.ObservableObject.Log">
+            <inheritdoc/>
+        </member>
+        <member name="E:PoncheToolkit.EffectsCreator.Entities.ObservableObject.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableObject.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableObject.SetProperty``1(``0@,``0,System.String)">
+            <summary>
+                Checks if a property already matches a desired value.  Sets the property and
+                notifies listeners only when necessary.
+            </summary>
+            <typeparam name="T">Type of the property.</typeparam>
+            <param name="field">Reference to a property with both getter and setter.</param>
+            <param name="value">Desired value for the property.</param>
+            <param name="propertyName">
+                Name of the property used to notify listeners.  This
+                value is optional and can be provided automatically when invoked from compilers that
+                support CallerMemberName.
+            </param>
+            <returns>
+                True if the value was changed, false if the existing value matched the
+                desired value.
+            </returns>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Entities.ObservableObject.OnPropertyChanged(System.String)">
+            <summary>
+            Event to call the property changed property.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.Controls.OpenFileDialogViewModel">
+            <summary>
+            View model for the Custom Button.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.Controls.OpenFileDialogViewModel.Filter">
+            <summary>
+            Text property.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.Controls.OpenFileDialogViewModel.#ctor(System.String,System.String,System.Action{System.Object})">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.Controls.CustomButtonViewModel">
+            <summary>
+            View model for the Custom Button.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.Controls.CustomButtonViewModel.Text">
+            <summary>
+            Text property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.Controls.CustomButtonViewModel.ClickCommand">
+            <summary>
+            Command executed when clicked.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.Controls.CustomButtonViewModel.#ctor(System.String,System.Action{System.Object})">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.WindowViewModelBase">
+            <summary>
+            Represent a view model that is contained in the MainWindow.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.WindowViewModelBase.IsInDesignMode">
+            <summary>
+            Property to get if the application is running in design mode.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.WindowViewModelBase.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.WindowViewModelBase.InitializeDesignData">
+            <summary>
+            Set the design data.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel">
+            <summary>
+            Class that define a group of parameters.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.Parameters">
+            <summary>
+            The pairs of the parameters (name, value).
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.GroupTitle">
+            <summary>
+            The title that will be shown in the expander of the group.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.IsExpanded">
+            <summary>
+            The expanded property.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.ParameterValueChangedCommand">
+            <summary>
+            Name of the parameter
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.ContainsParameterName(System.String)">
+            <summary>
+            Method to check if a certain name has already been added.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterGroupViewModel.InitializeDesignData">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel">
+            <summary>
+            View model for a single parameter.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.ParameterName">
+            <summary>
+            Name of the parameter
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.ParameterValue">
+            <summary>
+            Value of the parameter.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.ParameterType">
+            <summary>
+            Type of the parameter.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.CustomContent">
+            <summary>
+            The content to be shown inside the parameter.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.LoadedCommand">
+            <summary>
+            Command when finished loading control.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow,System.String,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="mainWindow"></param>
+            <param name="parameterName"></param>
+            <param name="parameterValue"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow,System.String,System.String,PoncheToolkit.EffectsCreator.Controls.ParameterSingle.ParameterTypes)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="mainWindow"></param>
+            <param name="parameterName"></param>
+            <param name="parameterValue"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParameterSingleViewModel.InitializeDesignData">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ParametersViewModel">
+            <summary>
+            ViewModel representing the menu data.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ParametersViewModel.ParameterGroups">
+            <summary>
+            The collection of group of parameters.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParametersViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ParametersViewModel.InitializeDesignData">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.MainWindowChildViewModelBase">
+            <summary>
+            Represent a view model that is contained in the MainWindow.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowChildViewModelBase.MainWindow">
+            <summary>
+            The MainWindow reference.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.MainWindowChildViewModelBase.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.MainWindowChildViewModelBase.#ctor(PoncheToolkit.EffectsCreator.MainWindow)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="mainWindow">The MainWindow reference to be kept within the view model</param>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel">
+            <summary>
+            ViewModel for the MainWindow.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.MainWindow">
+            <summary>
+            The instance of the MainWindow.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.MainMenuViewModel">
+            <summary>
+            View Model for the top menu interaction.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.ShaderViewModel">
+            <summary>
+            Text that is inside the shader editor.
+            This is the text that will be compiled.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.RenderViewModel">
+            <summary>
+            View Model for the render window.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.ParametersViewModel">
+            <summary>
+            View Model for the parameters window.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.BottomInformation">
+            <summary>
+            Information shown at the bottom of the application.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.ShaderNames">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.DocumentName">
+            <summary>
+            The title of the current document
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.Window_LoadedCommand">
+            <summary>
+            Command when the window has loaded.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.Window_GotFocusCommand">
+            <summary>
+            Command when the window is focused.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.Window_LostFocusCommand">
+            <summary>
+            Command when the window has lost focus.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.MainWindowViewModel.InitializeDesignData">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel">
+            <summary>
+            ViewModel representing the menu data.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.FileText">
+            <summary>
+            Text for the file menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.NewText">
+            <summary>
+            Text for the new menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.ImportText">
+            <summary>
+            Text for the import menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_shaderText">
+            <summary>
+            Text for the import shader template menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_shaderTemplateText">
+            <summary>
+            Text for the import shader template menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addText">
+            <summary>
+            Text for the import add menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addComponentText">
+            <summary>
+            Text for the import component menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addPrimitiveText">
+            <summary>
+            Text for the import component menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addPrimitiveTriangleText">
+            <summary>
+            Text for the import triangle component menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addPrimitiveSquareText">
+            <summary>
+            Text for the import square component menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addPrimitiveCubeText">
+            <summary>
+            Text for the import cube component menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_addModelText">
+            <summary>
+            Text for the import model menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.HelpText">
+            <summary>
+            Text for the help menu.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.File_NewCommand">
+            <summary>
+            Command when new menu is clicked.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_ShaderCommand">
+            <summary>
+            Command when importing a shader from a file.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_ShaderTemplateCommand">
+            <summary>
+            Command when importing a shader from a template.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_ComponentPrimitive">
+            <summary>
+            Command when importing a primitive component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.Import_ComponentModel">
+            <summary>
+            Command when importing a model component.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.MainMenuViewModel.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel">
+            <summary>
+            Data Context for the RichTextBox where the shader code is held.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.InteropImage">
+            <summary>
+            The DirectX Image that is rendered.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Width">
+            <summary>
+            The Width of the component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Height">
+            <summary>
+            The Height of the component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Size">
+            <summary>
+            The Size of the component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.GameWpf">
+            <summary>
+            The instance of the Sharp-Wpf game ready.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.SelectedComponent">
+            <summary>
+            The current selected component.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_LoadedCommand">
+            <summary>
+            Command when the window has loaded.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_SizeChangedCommand">
+            <summary>
+            Command when the window has changed size.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_MouseLeftButtonDownCommand">
+            <summary>
+            Set the captureMouse flag to true.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_MouseLeftButtonUpCommand">
+            <summary>
+            Set the captureMouse flag to false.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_MouseMoveCommand">
+            <summary>
+            Map the position to set the <see cref="T:PoncheToolkit.Graphics3D.Cameras.Camera"/> position.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.Render_MouseWheelCommand">
+            <summary>
+            Detect changes on the mouse wheel.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.render_mouseLeftButtonDownCommandExecution(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Set the flag to capture the mouse movement.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.render_mouseLeftButtonUpCommandExecution(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Set the flag to stop capturing the mouse movement.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.render_mouseMoveCommandExecution(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Set the camera position.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.render_mouseWheelCommandExecution(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>
+            Changes the camera zoom.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel">
+            <summary>
+            Data Context for the RichTextBox where the shader code is.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ThreadProcessType">
+            <summary>
+            Type of process to be made in another Thread.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ThreadProcessType.ShaderCompilation">
+            <summary>
+            When a shader is compiled.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ThreadProcessType.ShaderParsing">
+            <summary>
+            When a shader is parsed.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderType">
+            <summary>
+            Types of shader.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderType.VertexShader">
+            <summary>
+            Vertex shader.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderType.PixelShader">
+            <summary>
+            Pixel shader.
+            </summary>
+        </member>
+        <member name="F:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderType.GeometryShader">
+            <summary>
+            Geometry shader.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ProcessResults">
+            <summary>
+            Dictionary of results for each process made in a different Thread. (internal, not used in UI).
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ProcessResult">
+            <summary>
+            Get or set if the last try to compile the code was succesful. (internal, not used in UI).
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ProcessResultText">
+            <summary>
+            Message of any process made in another Thread. (internal, not used in UI).
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderText">
+            <summary>
+            Text that is inside the shader editor.
+            This is the text that will be compiled.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ShaderTextSelection">
+            <summary>
+            Selected Text that inside the shader editor.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.Shader">
+            <summary>
+            The shader that is applied to the models.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.Editor_SelectTextCommand">
+            <summary>
+            Command when any text is selected.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.Editor_TextChangedCommand">
+            <summary>
+            Command when the text has changed so it can be recompiled.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.#ctor(PoncheToolkit.EffectsCreator.MainWindow)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.CompilerWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Event that make the compilation.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.CompilerWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            Event raised when finished compiling successfuly.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ParserWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Parse the shader to get the parameters and color the text.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.ParserWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            Parsing finished.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.ViewModels.ShaderViewModel.InitializeDesignData">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Views.MainMenuView">
+            <summary>
+            Interaction logic for MainMenuContent.xaml
+            </summary>
+            <summary>
+            MainMenuView
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.MainMenuView.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.MainMenuView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Views.MainMenu.AddComponentPopupView">
+            <summary>
+            Interaction logic for AddComponentPopup.xaml
+            </summary>
+            <summary>
+            AddComponentPopupView
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.MainMenu.AddComponentPopupView.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.MainMenu.AddComponentPopupView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Views.ParameterView">
+            <summary>
+            Interaction logic for ParametersContent.xaml
+            </summary>
+            <summary>
+            ParameterView
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.ParameterView.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.ParameterView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Views.RenderView">
+            <summary>
+            Interaction logic for MainContent.xaml
+            </summary>
+            <summary>
+            RenderView
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.RenderView.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.RenderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Views.ShaderView">
+            <summary>
+            Interaction logic for MainContent.xaml
+            </summary>
+            <summary>
+            ShaderView
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.ShaderView.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Views.ShaderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Util.FrameworkHelper">
+            <summary>
+            Class to help retrieve certain elements in the tree.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Util.FrameworkHelper.FindParent``1(System.Windows.DependencyObject)">
+            <summary>
+            Find the parent for the given type.
+            </summary>
+            <typeparam name="T">Type of the parent to look for.</typeparam>
+            <param name="element">Element</param>
+            <returns>Retrn the parent.</returns>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Util.FrameworkHelper.MeasureString(System.String,System.Windows.Media.FontFamily,System.Windows.FontStyle,System.Windows.FontWeight,System.Windows.FontStretch,System.Double)">
+            <summary>
+            Measure a string.
+            </summary>
+            <param name="text"></param>
+            <param name="fontFamily"></param>
+            <param name="fontStyle"></param>
+            <param name="fontWeight"></param>
+            <param name="fontStretch"></param>
+            <param name="fontSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Util.StringToXamlConverter">
+            <summary>
+            Convert a string to xaml format to be used with the CustomRichTextBox.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Util.StringToXamlConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Util.StringToXamlConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.App.OnStartup(System.Windows.StartupEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1">
+            <summary>
+            Class to be inherited for any command sent between UI and Code behind.
+            </summary>
+        </member>
+        <member name="E:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1.CanExecuteChanged">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1.#ctor(System.Action{`0})">
+            <summary>
+            Constructor.
+            Set by default to true the canExecute action.
+            </summary>
+            <param name="execute"></param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="execute">The Function to be executed for this command.</param>
+            <param name="canExecute">The Function to know if this command can be executed.</param>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1.CanExecute(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.EffectsCreator.Commands.RelayCommand`1.Execute(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.EffectsCreator.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.EffectsCreator.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

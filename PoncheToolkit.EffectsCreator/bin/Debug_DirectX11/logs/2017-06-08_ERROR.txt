@@ -1,0 +1,10 @@
+2017-06-08 16:01:52.1912 | PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel -> DirectX11 window could not initialize correctly - System.InvalidCastException: Unable to cast object of type 'PoncheToolkit.Graphics3D.Effects.PTEffect11' to type 'PoncheToolkit.Graphics3D.Effects.PTEffect'.
+   at PoncheToolkit.Core.Management.Content.ContentManager11.LoadEffect[T](String effectPath, List`1 includePaths) in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Management\Content\ContentManager11.cs:line 370
+   at PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen.LoadShadersAndMaterials(IContentManager contentManager) in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\Entities\SharpDX\RenderScreen.cs:line 68
+   at PoncheToolkit.Core.Management.Screen.GameScreen.LoadContent(IContentManager contentManager) in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Management\Screen\GameScreen.cs:line 348
+   at PoncheToolkit.Core.Management.Screen.GameScreenManager.LoadContent(IContentManager contentManager) in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Management\Screen\GameScreenManager.cs:line 100
+   at PoncheToolkit.Core.Game.LoadContent() in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Game.cs:line 503
+   at PoncheToolkit.Core.Game11.LoadContent() in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Game11.cs:line 507
+   at PoncheToolkit.Core.Game.Run() in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\Game.cs:line 552
+   at PoncheToolkit.Core.WPF.GameWpf.Initialize() in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\DEV\Core\WPF\GameWpf.cs:line 116
+   at PoncheToolkit.EffectsCreator.ViewModels.RenderViewModel.render_loadedCommandExecution(RenderView renderView) in C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\ViewModels\RenderViewModel.cs:line 172

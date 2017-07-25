@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Microsoft.Wpf.Interop.DirectX_winsdk"
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Wpf.Interop.DirectX.D3D11Image.SetPixelSize(System.Int32,System.Int32)">
+The application hosting the D3D11Image should ensure that the PixelSize is the number of pixels that the D3D11Image is
+being displayed in.
+</member>
+        <member name="M:Microsoft.Wpf.Interop.DirectX.D3D11Image.RequestRender">
+The RequestRender method signals that the D3D11Image should get the DirectX rendering code to render a new frame to the provided surface.
+Typically the user of the D3D11Image calls this every time the CompositionTarget.Rendering event fires.
+</member>
+        <member name="P:Microsoft.Wpf.Interop.DirectX.D3D11Image.WindowOwner">
+The window handle (HWND) of the Window which hosts the D3D11Image (used during DirectX surface creation).
+</member>
+        <member name="P:Microsoft.Wpf.Interop.DirectX.D3D11Image.OnRender">
+The OnRender action delegate will fire and pass the surface to the application that the DirectX rendering component should 
+render into.
+</member>
+        <member name="T:Microsoft.Wpf.Interop.DirectX.D3D11Image">
+            <Summary>
+A System.Windows.Media.ImageSource which displays a user provided DirectX 10 or 11 surface.
+</Summary>
+        </member>
+        <member name="M:Microsoft.Windows.Media.SurfaceQueueInteropHelper.RequestRenderD2D">
+Requests render to happen.
+</member>
+        <member name="P:Microsoft.Windows.Media.SurfaceQueueInteropHelper.HWND">
+Gets or sets the HWND used by the helper while creating DirectX devices.
+</member>
+        <member name="M:Microsoft.Windows.Media.SurfaceQueueInteropHelper.SetPixelSize(System.UInt32,System.UInt32)">
+Enables user of this component to set the desired pixel size for the surface.
+</member>
+        <member name="P:Microsoft.Windows.Media.SurfaceQueueInteropHelper.PixelHeight">
+Gets the desired pixel height for the surface.
+</member>
+        <member name="P:Microsoft.Windows.Media.SurfaceQueueInteropHelper.PixelWidth">
+Gets the desired pixel width for the surface.
+</member>
+        <member name="P:Microsoft.Windows.Media.SurfaceQueueInteropHelper.D3DImage">
+Gets or sets the associated D3DImage object that is working in conjunction with this helper.
+</member>
+        <member name="P:Microsoft.Windows.Media.SurfaceQueueInteropHelper.RenderD2D">
+The action delegate called when a render is required.
+</member>
+        <member name="T:Microsoft.Windows.Media.SurfaceQueueInteropHelper">
+A helper class which enables several versions of DirectX to share the same rendering surface.
+</member>
+    </members>
+</doc>

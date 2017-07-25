@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoncheToolkit.Tests</name>
+    </assembly>
+    <members>
+        <member name="E:PoncheToolkit.Tests.GameTests.Screens.DemoScreen2.OnFinishLoadRenderableComponents">
+            <inheritdoc/>
+        </member>
+        <member name="E:PoncheToolkit.Tests.GameTests.Screens.DemoScreen.OnFinishLoadRenderableComponents">
+            <inheritdoc/>
+        </member>
+        <member name="E:PoncheToolkit.Tests.GameTests.Screens.LoadingScreen.OnFinishLoadRenderableComponents">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.Tests.GameTests.Screens.LoadingScreen.TestScreen_OnFinishLoadContent">
+            <summary>
+            When finished loading all the content in the screen.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.Tests.GameTests.Screens.LoadingScreen.UpdateState">
+            <inheritdoc/>
+        </member>
+        <member name="E:PoncheToolkit.Tests.GameTests.Screens.TestScreen.OnFinishLoadRenderableComponents">
+            <inheritdoc/>
+        </member>
+        <member name="M:PoncheToolkit.Tests.GameTests.Screens.TestScreen.TestScreen_OnFinishLoadContent">
+            <summary>
+            When finished loading all the content in the screen.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.Tests.GameTests.Screens.TestScreen.UpdateState">
+            <inheritdoc/>
+        </member>
+        <member name="T:PoncheToolkit.Tests.GameTests.TestGame">
+            <summary>
+            Class to make every kind of tests to the engine.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.Tests.GameTests.TestGame.TestGame_OnInitialized">
+            <summary>
+            Event raised when finished the base initialization.
+            </summary>
+        </member>
+        <member name="M:PoncheToolkit.Tests.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:PoncheToolkit.Tests.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.Tests.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PoncheToolkit.Tests.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,196 @@
+15:20:23.4878 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> 
+
+ ======= Initializing Game ======= 
+
+
+15:20:23.5268 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> Using DirectX11
+
+15:20:23.5268 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Settings:
+15:20:23.5268 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | DeviceDriverType: Hardware
+15:20:23.5448 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | DeviceCreationFlags: Debug, BgraSupport
+15:20:23.5448 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Resolution: {Width=1280, Height=720}
+15:20:23.5448 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | AvailableResolutions: System.Collections.Generic.List`1[System.Drawing.Size]
+15:20:23.5629 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | FeatureLevels: SharpDX.Direct3D.FeatureLevel[]
+15:20:23.5629 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Fullscreen: False
+15:20:23.5759 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | DepthBufferEnabled: True
+15:20:23.5759 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | BlendState: Disabled
+15:20:23.5759 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | DebugMode: False
+15:20:23.5929 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | LockFramerate: False
+15:20:23.5929 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Draw2DShadows: False
+15:20:23.5929 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | OperatingSystemVersion: Windows8
+15:20:23.6049 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Gamma: 2
+15:20:23.6049 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | GlobalRenderTargetsFormat: R8G8B8A8_UNorm
+15:20:23.6049 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | DirtyProperties: System.Collections.Generic.Dictionary`2[System.String,System.Object]
+15:20:23.6049 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | IsStateUpdated: False
+15:20:23.6249 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> | Log: PoncheToolkit.Util.Logger
+15:20:23.7029 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> Initializing main application window with size: {Width=1280, Height=720}
+15:20:23.7029 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> Initializing services...
+15:20:23.8404 | WARN | PoncheToolkit.Core.Management.Input.InputManager -> No Controllers detected.
+15:20:23.8404 | INFO | PoncheToolkit.Graphics2D.Animation.Animation2DManager -> Initializing service -Animation2DManager-
+15:20:23.8810 | INFO | PoncheToolkit.Core.Management.Sound.SoundManager -> Initializing service -SoundManager-
+15:20:24.0330 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexture05891c08-2627-42d8-b88e-a61fa5eae342-
+15:20:24.0720 | DEBUG | Core.Management.Text.CustomFontLoader -> Loading fonts from: -Content\Fonts-
+15:20:24.1340 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Initialized component of type -FreeCamera- with name: --
+15:20:24.1550 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTextured8ebed1d-acf6-40b3-964f-789ee50bcfca-
+15:20:24.1700 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexture26d28e2b-da01-4b12-b68e-0feedbfee76e-
+15:20:24.1870 | INFO | PoncheToolkit.Tests.GameTests.TestGame -> Finished Game Initialization
+15:20:24.2011 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Initialized component of type -FreeCamera- with name: -free camera-
+15:20:24.2011 | INFO | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Initializing components for Screen -DemoScreen- 
+15:20:24.2336 | WARN | PoncheToolkit.Tests.GameTests.TestGame -> No attached Debugger service
+15:20:24.2336 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Loading content from component of type -FreeCamera- with name: --
+15:20:24.2501 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexture9c7a063b-1cdd-41f1-87f9-9946de782717-
+15:20:24.2931 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loading Model from path: -Models/duck/duck.dae-
+15:20:24.3431 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Load C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\duck\duck.dae
+
+15:20:24.3431 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Found a matching importer for this file format
+
+15:20:24.3551 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Import root directory is 'C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\duck\'
+
+15:20:24.3731 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Entering post processing pipeline
+
+15:20:24.3731 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: TriangulateProcess finished. All polygons have been triangulated.
+
+15:20:24.3891 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: JoinVerticesProcess finished | Verts in: 8500 out: 2399 | ~71.8%
+
+15:20:24.3891 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Leaving post processing pipeline
+
+15:20:24.5041 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/duck\./duckCM.bmp-
+15:20:24.5041 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:24.5327 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Finished loaded Model from path: -Models/duck/duck.dae-
+15:20:24.5327 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loading Model from path: -Models/nano_suit/nanosuit.obj-
+15:20:24.5472 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Load C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\nano_suit\nanosuit.obj
+
+15:20:24.5472 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Load C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\nano_suit\nanosuit.obj
+
+15:20:24.5582 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Found a matching importer for this file format
+
+15:20:24.5582 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Found a matching importer for this file format
+
+15:20:24.5582 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Import root directory is 'C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\nano_suit\'
+
+15:20:24.5812 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Import root directory is 'C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Models\nano_suit\'
+
+15:20:24.6582 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Entering post processing pipeline
+
+15:20:24.6582 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Entering post processing pipeline
+
+15:20:24.6722 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: RemoveRedundantMatsProcess finished. Removed 0 redundant and 1 unused materials.
+
+15:20:24.6722 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: RemoveRedundantMatsProcess finished. Removed 0 redundant and 1 unused materials.
+
+15:20:24.7032 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: CalcTangentsProcess finished. Tangents have been calculated
+
+15:20:24.7032 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: CalcTangentsProcess finished. Tangents have been calculated
+
+15:20:24.7342 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: JoinVerticesProcess finished | Verts in: 57174 out: 14262 | ~75.1%
+
+15:20:24.7342 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: JoinVerticesProcess finished | Verts in: 57174 out: 14262 | ~75.1%
+
+15:20:24.7472 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Leaving post processing pipeline
+
+15:20:24.7472 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 ->  -> Info,  T1556: Leaving post processing pipeline
+
+15:20:24.8492 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\arm_dif.png-
+15:20:24.9378 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\arm_showroom_spec.png-
+15:20:24.9981 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\arm_showroom_ddn.png-
+15:20:24.9981 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:25.1191 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\body_dif.png-
+15:20:25.2212 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\body_showroom_spec.png-
+15:20:25.3169 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\body_showroom_ddn.png-
+15:20:25.3169 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:25.3304 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\glass_dif.png-
+15:20:25.3304 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\glass_ddn.png-
+15:20:25.3424 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:25.3994 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\hand_dif.png-
+15:20:25.4853 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\hand_showroom_spec.png-
+15:20:25.5488 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\hand_showroom_ddn.png-
+15:20:25.5488 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:25.6069 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\helmet_diff.png-
+15:20:25.6883 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\helmet_showroom_spec.png-
+15:20:25.7483 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\helmet_showroom_ddn.png-
+15:20:25.7483 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:25.8299 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\leg_dif.png-
+15:20:25.9154 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\leg_showroom_spec.png-
+15:20:25.9860 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Models/nano_suit\leg_showroom_ddn.png-
+15:20:25.9860 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:26.0365 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Finished loaded Model from path: -Models/nano_suit/nanosuit.obj-
+15:20:26.0805 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Vertex Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Effects\Dynamic\PTVS.fx
+15:20:26.2525 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Vertex Shader from path: -Effects/Dynamic/PTVS.fx-
+15:20:26.2615 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Pixel Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Effects\Dynamic\PTPS.fx
+15:20:26.6159 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Pixel Shader from path: -Effects/Dynamic/PTPS.fx-
+15:20:26.6209 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:26.6209 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Pixel Shader from path: -Effects/Dynamic/PTVS.fx- already loaded in memory.
+15:20:26.6399 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Pixel Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Effects\Dynamic\PTPS.fx
+15:20:27.0076 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Pixel Shader from path: -Effects/Dynamic/PTPS.fx-
+15:20:27.0121 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.0561 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Pixel Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Effects\PostProcess\PTEdgeDetectionEffect.fx
+15:20:27.0811 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Pixel Shader from path: -Effects/PostProcess/PTEdgeDetectionEffect.fx-
+15:20:27.0971 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Pixel Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.Tests\bin\Debug_DirectX11\Content\Effects\PostProcess\PTRippleEffect.fx
+15:20:27.1191 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Pixel Shader from path: -Effects/PostProcess/PTRippleEffect.fx-
+15:20:27.1281 | INFO | PoncheToolkit.Graphics3D.Primitives.Sphere -> Initialized component of type -Sphere- with name: --
+15:20:27.1281 | INFO | PoncheToolkit.Graphics3D.Primitives.Sphere -> Loading content from component of type -Sphere- with name: --
+15:20:27.1431 | INFO | PoncheToolkit.Graphics3D.Primitives.Sphere -> Initialized component of type -Sphere- with name: --
+15:20:27.1431 | INFO | PoncheToolkit.Graphics3D.Primitives.Sphere -> Loading content from component of type -Sphere- with name: --
+15:20:27.1541 | INFO | PoncheToolkit.Graphics3D.Primitives.Triangle -> Loading content from component of type -Triangle- with name: --
+15:20:27.1541 | INFO | PoncheToolkit.Graphics3D.Primitives.Triangle -> Loading content from component of type -Triangle- with name: --
+15:20:27.1541 | INFO | PoncheToolkit.Graphics3D.Primitives.Triangle -> Loading content from component of type -Triangle- with name: --
+15:20:27.1811 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/bricks_bump.gif-
+15:20:27.1931 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/bricks.gif-
+15:20:27.1931 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.3622 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/wall_red_bump.jpg-
+15:20:27.5052 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/wall_red.jpg-
+15:20:27.5662 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/grass.jpg-
+15:20:27.5662 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.5772 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Texture2D from path: -Textures/wall_red_bump.jpg- already loaded in memory.
+15:20:27.5772 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Texture2D from path: -Textures/wall_red.jpg- already loaded in memory.
+15:20:27.5772 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.6988 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/reflective_floor_bump.jpg-
+15:20:27.7503 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/reflective_floor.png-
+15:20:27.7503 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexturee7c145e0-96b6-4e9a-bccf-55c351135e4e-
+15:20:27.7503 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.7653 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexture12e8fa12-45a8-4ab6-bdde-1dc346f2bdd3-
+15:20:27.8113 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -Textures/crate1_bump.jpg-
+15:20:27.8393 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from path: -crate1.jpg-
+15:20:27.8393 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Texture2D from path: -Textures/grass.jpg- already loaded in memory.
+15:20:27.8393 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+15:20:27.8573 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Loading content from component of type -FreeCamera- with name: -free camera-
+15:20:27.8573 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -wall1-
+15:20:27.8713 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -wall1-
+15:20:27.8713 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.8713 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -wallleftparallel-
+15:20:27.8873 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -wallleftparallel-
+15:20:27.8873 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.8873 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -wall2-
+15:20:27.9033 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -wall2-
+15:20:27.9033 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.9033 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -wall3-
+15:20:27.9178 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -wall3-
+15:20:27.9178 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.9178 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -wall4-
+15:20:27.9348 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -wall4-
+15:20:27.9348 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.9348 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Initialized component of type -Square- with name: -floor-
+15:20:27.9519 | INFO | PoncheToolkit.Graphics3D.Primitives.Square -> Loading content from component of type -Square- with name: -floor-
+15:20:27.9519 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.9659 | INFO | PoncheToolkit.Graphics3D.Primitives.Cube -> Loading content from component of type -Cube- with name: -cube-
+15:20:27.9659 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:27.9659 | INFO | PoncheToolkit.Graphics3D.PTModel -> Initialized component of type -PTModel- with name: -nanosuit-
+15:20:27.9819 | INFO | PoncheToolkit.Graphics3D.PTModel -> Loading content from component of type -PTModel- with name: -nanosuit-
+15:20:27.9819 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0014 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Arm- to effect: -PTToonEffect_-
+15:20:28.0014 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Body- to effect: -PTToonEffect_-
+15:20:28.0014 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Glass- to effect: -PTToonEffect_-
+15:20:28.0140 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Hand- to effect: -PTToonEffect_-
+15:20:28.0140 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Helmet- to effect: -PTToonEffect_-
+15:20:28.0140 | DEBUG | PoncheToolkit.Tests.GameTests.Screens.DemoScreen -> Adding material -Leg- to effect: -PTToonEffect_-
+15:20:28.0320 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0320 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0460 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0460 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0580 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0580 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0580 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0740 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0740 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0740 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --
+15:20:28.0900 | INFO | PoncheToolkit.Graphics3D.PTMesh -> Initialized component of type -PTMesh- with name: --

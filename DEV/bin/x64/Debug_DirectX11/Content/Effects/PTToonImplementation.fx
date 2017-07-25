@@ -1,0 +1,240 @@
+#ifndef _PTToonImplementation
+#define _PTToonImplementation
+
+#ifndef _PTLinkingInterfaces
+#include "PTLinkingInterfaces.fx"
+#endif
+
+#ifndef _PTLinkingClasses
+#include "PTLinkingClasses.fx"
+#endif
+
+#define MAX_LIGHTS 15
+
+// ===== Abstract declarations =====
+IMaterial MaterialAbstract;
+ILight LightsAbstract[MAX_LIGHTS];
+// ===== Abstract declarations =====
+
+struct _PixelShader_IN
+{
+    float4 Position : SV_POSITION0;
+    float4 Color : COLOR0;
+    float4 WorldPos : POSITION;
+    float2 TexCoord : TEXCOORD0;
+    float3 Normal : NORMAL;
+    float3 Tangent : TANGENT;
+    float3 Binormal : BINORMAL;
+    float4 ReflectionPos : TEXCOORD1;
+    float3 ViewDirection : TEXCOORD2;
+    float ReflectionClipZ : TEXCOORD3;
+};
+
+// ================================ IMaterial methods ================================
+_BumpProperties MaterialClass::CalculateBump(Texture2D<float4> bumpMapTexture, SamplerState textureSampler, float3 tangent, float3 binormal, float3 normal, float2 texCoord)
+{
+    _BumpProperties result = { { 0, 0, 0 }, { 0, 0, 0, 0 } };
+    if (!GetIsBump())
+        return result;
+
+    result.BumpMap = bumpMapTexture.Sample(textureSampler, texCoord);
+    result.BumpMap = (result.BumpMap * 2.0f) - 1.0f;
+    result.BumpNormal = (result.BumpMap.x * tangent) + (result.BumpMap.y * binormal) + (result.BumpMap.z * normal);
+    result.BumpNormal = normalize(result.BumpNormal);
+
+    return result;
+}
+
+float4 MaterialClass::CalculateSpecular(Texture2D specularMapTexture, SamplerState samplerState, float4 currentSpecular, float2 texCoord)
+{
+    float4 resultColor = float4(0, 0, 0, 0);
+    if (GetIsSpecular())
+    {
+        float4 specularMapColor = float4(0, 0, 0, 0);
+        if (GetHasSpecularMap())
+        {
+            specularMapColor = specularMapTexture.Sample(samplerState, texCoord);
+            resultColor = (currentSpecular * specularMapColor);
+        }
+        else
+            resultColor = currentSpecular;
+    }
+
+    return resultColor;
+}
+// ================================ IMaterial methods ================================
+
+
+// ================================ ILight methods ================================
+_LightCalculationResult LightClass::CalculateLight(IMaterial mat, float4 position, float3 viewDirection,
+                            float3 normal, float3 bumpNormal, float2 texCoord, Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+
+    float dist = distance(Position, position);
+    if (dist > Range)
+    {
+        result.Discarded = true;
+        return result;
+    }
+
+    if (IsEnabled)
+    {
+        switch (Type)
+        {
+            case DIRECTIONAL_LIGHT:
+                result = CalculateDirectionalLight(mat, position, viewDirection, normal, bumpNormal, texCoord, specularMap, textureSampler);
+                break;
+            case POINT_LIGHT:
+                result = CalculatePointLight(mat, position, viewDirection, normal, bumpNormal, texCoord, specularMap, textureSampler);
+                break;
+            case SPOT_LIGHT:
+                result = CalculateSpotLight(mat, position, viewDirection, normal, bumpNormal, texCoord, specularMap, textureSampler);
+                break;
+        }
+    }
+
+    return result;
+};
+
+// Calulcate the diffuse lighting.
+float4 LightClass::CalculateDiffuseLighting(IMaterial mat, float3 lightDirection, float3 normal, float3 bumpNormal, out float diffuseIntensity)
+{
+    float diffuse;
+
+    //if (mat.GetIsBump())
+    //    diffuse = max(0, dot(bumpNormal, lightDirection));
+    //else
+    //    diffuse = saturate(dot(normal, lightDirection));
+
+    //if (mat.GetIsBump())
+    //    diffuse = normalize(dot(bumpNormal, lightDirection));
+    //else
+    //    diffuse = normalize(dot(normal, lightDirection));
+    
+    diffuse = normalize(dot(normal, lightDirection));
+    diffuseIntensity = diffuse;
+
+    float4 resultColor = float4(0, 0, 0, 0);
+    if (diffuse > 0.96)
+        resultColor = float4(1, 1, 1, 1) * Color;
+    else if (diffuse > 0.6)
+        resultColor = float4(0.7, 0.7, 0.7, 1.0) * Color;
+    else if (diffuse > 0.1)
+        resultColor = float4(0.4, 0.4, 0.4, 1.0) * Color;
+    else if (diffuse > 0)
+        resultColor = float4(0.1, 0.1, 0.1, 1.0) * Color;
+
+    return resultColor * Intensity * diffuse;
+}
+
+// Calulcate the specular lighting.
+float4 LightClass::CalculateSpecularLighting(IMaterial mat, float3 viewDirection, float3 lightDirection, float3 normal, float3 bumpNormal, float2 texCoord,
+                            Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    float3 reflection;
+    float dotProduct;
+
+    //// Phong lighting.
+    //if (mat.GetIsBump())
+    //    reflection = normalize(reflect(-lightDirection, bumpNormal));
+    //else
+    //    reflection = normalize(reflect(-lightDirection, normal));
+    //dotProduct = max(0, dot(reflection, viewDirection));
+
+    // Blinn-Phong lighting
+    reflection = normalize(lightDirection + viewDirection);
+    if (mat.GetIsBump())
+        dotProduct = max(0, dot(bumpNormal, reflection));
+    else
+        dotProduct = max(0, dot(normal, reflection));
+
+
+    float4 result = Color * pow(dotProduct, mat.GetSpecularPower());
+    if (mat.GetHasSpecularMap())
+        result *= specularMap.Sample(textureSampler, texCoord);
+
+    return result * Intensity;
+}
+
+float LightClass::CalculateSpotCone(float3 lightVector)
+{
+    float minCos = cos(SpotAngle);
+    float maxCos = (minCos + 1.0f) / 2.0f;
+    float cosAngle = dot(Direction.xyz, -lightVector);
+    return smoothstep(minCos, maxCos, cosAngle);
+}
+
+_LightCalculationResult LightClass::CalculateDirectionalLight(IMaterial mat, float4 position, float3 viewDirection,
+                            float3 normal, float3 bumpNormal, float2 texCoord, Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+ 
+    float3 lightVector = -Direction.xyz;
+ 
+    result.Diffuse = CalculateDiffuseLighting(mat, lightVector, normal, bumpNormal, result.DiffuseIntensity);
+    if (mat.GetIsSpecular())
+        result.Specular = CalculateSpecularLighting(mat, viewDirection, lightVector, normal, bumpNormal, texCoord, specularMap, textureSampler);
+ 
+    return result;
+}
+
+_LightCalculationResult LightClass::CalculatePointLight(IMaterial mat, float4 position, float3 viewDirection,
+                            float3 normal, float3 bumpNormal, float2 texCoord, Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+
+    float3 lightVector = normalize(Position - position).xyz;
+    float distance = length(lightVector);
+    lightVector = lightVector / distance;
+ 
+    float attenuation = CalculateAttenuation(distance);
+ 
+    result.Diffuse = CalculateDiffuseLighting(mat, lightVector, normal, bumpNormal, result.DiffuseIntensity) * attenuation;
+    if (mat.GetIsSpecular())
+        result.Specular = CalculateSpecularLighting(mat, viewDirection, lightVector, normal, bumpNormal, texCoord, specularMap, textureSampler) * attenuation;
+ 
+    return result;
+}
+
+_LightCalculationResult LightClass::CalculateSpotLight(IMaterial mat, float4 position, float3 viewDirection,
+                            float3 normal, float3 bumpNormal, float2 texCoord, Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+
+    //float3 lightVector = normalize(GetPosition() - position).xyz;
+    float3 lightVector = (Position - position).xyz;
+    float distance = length(lightVector);
+    lightVector = lightVector / distance;
+ 
+    float attenuation = CalculateAttenuation(distance);
+    float spotIntensity = CalculateSpotCone(lightVector);
+ 
+    result.Diffuse = CalculateDiffuseLighting(mat, lightVector, normal, bumpNormal, result.DiffuseIntensity) * attenuation * spotIntensity;
+    if (mat.GetIsSpecular())
+        result.Specular = CalculateSpecularLighting(mat, viewDirection, lightVector, normal, bumpNormal, texCoord, specularMap, textureSampler) * attenuation * spotIntensity;
+
+    return result;
+}
+
+// Calculate the attenuation of a light using its Constant, Linear and Quadratic attenuation values.
+float LightClass::CalculateAttenuation(float distance)
+{
+    //float d = max(distance - GetRange(), 0);
+    //float denom = (d / GetRange()) + 1;
+    //float attenuation = 1 / (denom * denom);
+     
+    //// scale and bias attenuation such that:
+    ////   attenuation == 0 at extent of max influence
+    ////   attenuation == 1 when d == 0
+    //float cutoff = 0.005;
+    //attenuation = (attenuation - cutoff) / (1 - cutoff);
+    //attenuation = max(attenuation, 0);
+    //return attenuation;
+
+    //float b = (1 / (GetRange() * GetRange() * 0.01));
+    //return 1.0f / (GetConstantAttenuation() + (GetLinearAttenuation() * distance) + (b * distance * distance));
+    return 1.0f / (ConstantAttenuation + (LinearAttenuation * distance) + (QuadraticAttenuation * distance * distance));
+    //return 1.0f - smoothstep(GetRange() * 0.6, GetRange(), distance);
+}
+#endif

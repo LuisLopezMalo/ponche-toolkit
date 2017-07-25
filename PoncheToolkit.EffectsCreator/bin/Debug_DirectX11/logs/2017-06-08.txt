@@ -1,0 +1,326 @@
+16:01:50.8552 | INFO | PoncheToolkit.Core.WPF.GameWpf -> Using DirectX11
+
+16:01:50.8897 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Settings:
+16:01:50.8987 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | DeviceDriverType: Hardware
+16:01:50.8987 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | DeviceCreationFlags: Debug, BgraSupport
+16:01:50.8987 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Resolution: {Width=1280, Height=720}
+16:01:50.9122 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | AvailableResolutions: System.Collections.Generic.List`1[System.Drawing.Size]
+16:01:50.9122 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | FeatureLevels: SharpDX.Direct3D.FeatureLevel[]
+16:01:50.9122 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Fullscreen: False
+16:01:50.9257 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | DepthBufferEnabled: True
+16:01:50.9257 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | BlendState: Disabled
+16:01:50.9257 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | DebugMode: False
+16:01:50.9427 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | LockFramerate: False
+16:01:50.9427 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Draw2DShadows: False
+16:01:51.0963 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | OperatingSystemVersion: Windows8
+16:01:51.0963 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Gamma: 2
+16:01:51.0963 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | GlobalRenderTargetsFormat: R8G8B8A8_UNorm
+16:01:51.1118 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | DirtyProperties: System.Collections.Generic.Dictionary`2[System.String,System.Object]
+16:01:51.1118 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | IsStateUpdated: False
+16:01:51.1118 | INFO | PoncheToolkit.Core.WPF.GameWpf -> | Log: PoncheToolkit.Util.Logger
+16:01:51.1288 | INFO | PoncheToolkit.Core.Game11 -> 
+
+ ======= Initializing Game ======= 
+
+
+16:01:51.1648 | WARN | PoncheToolkit.Core.Game11 -> Failed to set custom console size.
+16:01:51.1648 | INFO | PoncheToolkit.Core.Game11 -> Using DirectX11
+
+16:01:51.1738 | INFO | PoncheToolkit.Core.Game11 -> | Settings:
+16:01:51.1738 | INFO | PoncheToolkit.Core.Game11 -> | DeviceDriverType: Hardware
+16:01:51.2963 | INFO | PoncheToolkit.Core.Game11 -> | DeviceCreationFlags: Debug, BgraSupport
+16:01:51.2998 | INFO | PoncheToolkit.Core.Game11 -> | Resolution: {Width=1280, Height=720}
+16:01:51.2998 | INFO | PoncheToolkit.Core.Game11 -> | AvailableResolutions: System.Collections.Generic.List`1[System.Drawing.Size]
+16:01:51.2998 | INFO | PoncheToolkit.Core.Game11 -> | FeatureLevels: SharpDX.Direct3D.FeatureLevel[]
+16:01:51.2998 | INFO | PoncheToolkit.Core.Game11 -> | Fullscreen: False
+16:01:51.3178 | INFO | PoncheToolkit.Core.Game11 -> | DepthBufferEnabled: True
+16:01:51.3178 | INFO | PoncheToolkit.Core.Game11 -> | BlendState: Disabled
+16:01:51.3178 | INFO | PoncheToolkit.Core.Game11 -> | DebugMode: False
+16:01:51.3293 | INFO | PoncheToolkit.Core.Game11 -> | LockFramerate: False
+16:01:51.3293 | INFO | PoncheToolkit.Core.Game11 -> | Draw2DShadows: False
+16:01:51.3293 | INFO | PoncheToolkit.Core.Game11 -> | OperatingSystemVersion: Windows8
+16:01:51.3293 | INFO | PoncheToolkit.Core.Game11 -> | Gamma: 2
+16:01:51.4964 | INFO | PoncheToolkit.Core.Game11 -> | GlobalRenderTargetsFormat: R8G8B8A8_UNorm
+16:01:51.4964 | INFO | PoncheToolkit.Core.Game11 -> | DirtyProperties: System.Collections.Generic.Dictionary`2[System.String,System.Object]
+16:01:51.5034 | INFO | PoncheToolkit.Core.Game11 -> | IsStateUpdated: False
+16:01:51.5034 | INFO | PoncheToolkit.Core.Game11 -> | Log: PoncheToolkit.Util.Logger
+16:01:51.5434 | INFO | PoncheToolkit.Core.Game11 -> Initializing main application window with size: {Width=1280, Height=720}
+16:01:51.5508 | INFO | PoncheToolkit.Core.Game11 -> Initializing services...
+16:01:51.6497 | WARN | PoncheToolkit.Core.Management.Input.InputManager -> No Controllers detected.
+16:01:51.6497 | INFO | PoncheToolkit.Graphics2D.Animation.Animation2DManager -> Initializing service -Animation2DManager-
+16:01:51.6797 | INFO | PoncheToolkit.Core.Management.Sound.SoundManager -> Initializing service -SoundManager-
+16:01:51.7969 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexturec3a07fd2-2f87-4259-9145-d323874e6e4f-
+16:01:51.8254 | DEBUG | Core.Management.Text.CustomFontLoader -> Loading fonts from: -Content\Fonts-
+16:01:51.8984 | WARN | PoncheToolkit.Graphics3D.GraphicsRenderer11 -> No attached Debugger service
+16:01:51.9113 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Initialized component of type -FreeCamera- with name: --
+16:01:51.9113 | INFO | PoncheToolkit.Core.Game11 -> Finished Game Initialization
+16:01:51.9283 | INFO | PoncheToolkit.EffectsCreator.Entities.SharpDX.RenderScreen -> Initializing components for Screen -RenderScreen- 
+16:01:51.9283 | INFO | PoncheToolkit.Graphics3D.Cameras.ThirdPersonCamera -> Initialized component of type -ThirdPersonCamera- with name: -maincamera-
+16:01:51.9756 | INFO | PoncheToolkit.Graphics3D.Cameras.FreeCamera -> Loading content from component of type -FreeCamera- with name: --
+16:01:51.9866 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Texture2D from textureKey: -RTTexture56769377-6a45-411e-a8fb-358538940848-
+16:01:51.9866 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loading Effect from path: -Effects/PTTextureEffect.fx-
+16:01:52.1077 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Vertex Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\bin\Debug_DirectX11\Content\Effects\PTTextureEffect.fx
+16:01:52.1407 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Pixel Shader - C:\_Programming\Videogames\SharpDX\Ponche\Ponche Toolkit (SharpDX 3.0)\PoncheToolkit.EffectsCreator\bin\Debug_DirectX11\Content\Effects\PTTextureEffect.fx
+16:01:52.1567 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Loaded Shader from path: -Effects/PTTextureEffect.fx-
+16:01:52.1662 | INFO | PoncheToolkit.Graphics3D.Cameras.ReflectionCamera -> Loading content from component of type -ReflectionCamera- with name: --
+16:02:16.7617 | DEBUG | PoncheToolkit.Core.Management.Content.ContentManager11 -> Compiling Vertex Shader - //#ifndef _PTStructs
+//#include "../../../DEV/Content/Effects/Dynamic/PTStructs.fx"
+//#endif
+
+#ifndef _PTStructs
+#include "Dynamic/PTStructs.fx"
+#endif
+
+cbuffer ToonConstantBuffer : register(b3) // 64 kb per ConstantBuffer MAX
+{
+    float4 LightLimits;
+};
+
+// ================================ IMaterial methods ================================
+_BumpProperties CalculateBump(MaterialStruct material, _PixelShader_IN input, Texture2D<float4> bumpMapTexture, SamplerState textureSampler)
+{
+    _BumpProperties result = { { 0, 0, 0 }, { 0, 0, 0, 0 } };
+    if (!material.IsBump)
+        return result;
+
+    result.BumpMap = bumpMapTexture.Sample(textureSampler, input.TexCoord);
+    result.BumpMap = (result.BumpMap * 2.0f) - 1.0f;
+    result.BumpNormal = (result.BumpMap.x * input.Tangent) + (result.BumpMap.y * input.Binormal) + (result.BumpMap.z * input.Normal);
+    result.BumpNormal = normalize(result.BumpNormal);
+
+    return result;
+}
+
+float4 CalculateMaterialDiffuse(MaterialStruct material, float4 globalAmbient, float4 lightDiffuse, float4 lightSpecular)
+{
+    float4 finalEmissive = material.EmissiveColor;
+    float4 finalAmbient = material.AmbientColor * globalAmbient;
+    float4 finalDiffuse = material.DiffuseColor * lightDiffuse;
+    float4 finalSpecular = material.SpecularColor * lightSpecular;
+
+    float4 resultColor = (finalEmissive + finalAmbient + finalDiffuse);
+    return resultColor;
+}
+
+float4 CalculateMaterialSpecular(MaterialStruct material, Texture2D specularMapTexture, SamplerState samplerState, float4 currentSpecular, float2 texCoord)
+{
+    float4 resultColor = float4(0, 0, 0, 0);
+    if (material.IsSpecular)
+    {
+        float4 specularMapColor = float4(0, 0, 0, 0);
+        if (material.HasSpecularMap)
+        {
+            specularMapColor = specularMapTexture.Sample(samplerState, texCoord);
+            resultColor = (currentSpecular * specularMapColor);
+        }
+        else
+            resultColor = currentSpecular;
+    }
+
+    return resultColor;
+}
+// ================================ IMaterial methods ================================
+
+
+// Calculate the attenuation of a light using its Constant, Linear and Quadratic attenuation values.
+float CalculateAtt(LightStruct light, float distance)
+{
+    //float d = max(distance - GetRange(), 0);
+    //float denom = (d / GetRange()) + 1;
+    //float attenuation = 1 / (denom * denom);
+     
+    //// scale and bias attenuation such that:
+    ////   attenuation == 0 at extent of max influence
+    ////   attenuation == 1 when d == 0
+    //float cutoff = 0.005;
+    //attenuation = (attenuation - cutoff) / (1 - cutoff);
+    //attenuation = max(attenuation, 0);
+    //return attenuation;
+
+    //float b = (1 / (GetRange() * GetRange() * 0.01));
+    //return 1.0f / (GetConstantAttenuation() + (GetLinearAttenuation() * distance) + (b * distance * distance));
+    return 1.0f / (light.ConstAtt + (light.LineAtt * distance) + (light.QuadAtt * distance * distance));
+    //return 1.0f - smoothstep(GetRange() * 0.6, GetRange(), distance);
+}
+
+// ================================ Light methods ================================
+// Calulcate the diffuse lighting.
+float4 CalculateDiffuse(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps, float3 lightVector, out float diffuseIntensity)
+{
+    //float diffuse = dot(input.Normal, lightVector);
+    //diffuseIntensity = max(0, diffuse);
+
+    //float4 resultColor = float4(0, 0, 0, 0);
+    //if (diffuse > LightLimits.x)
+    //    resultColor = float4(1, 1, 1, 1);
+    //else if (diffuse > LightLimits.y)
+    //    resultColor = float4(0.7, 0.7, 0.7, 1.0);
+    //else if (diffuse > LightLimits.z)
+    //    resultColor = float4(0.4, 0.4, 0.4, 1.0);
+    //else if (diffuse > LightLimits.w)
+    //    resultColor = float4(0.1, 0.1, 0.1, 1.0);
+
+    float diffuse;
+    if (material.IsBump)
+        diffuse = max(0, dot(bumpProps.BumpNormal, lightVector));
+    else
+        diffuse = saturate(dot(input.Normal, lightVector));
+    
+    diffuseIntensity = max(0, diffuse);
+
+    float4 resultColor = float4(0, 0, 0, 0);
+    if (diffuseIntensity > 0.7)
+        resultColor = float4(1, 1, 1, 1);
+    else if (diffuseIntensity > 0.2)
+        resultColor = float4(0.7, 0.7, 0.7, 1);
+    else
+        resultColor = float4(0.1, 0.1, 0.1, 1);
+
+    return resultColor * light.Color * light.Intensity * diffuseIntensity;
+}
+
+// Calulcate the specular lighting.
+float4 CalculateSpecular(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps, float3 lightVector,
+                            Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    float3 reflection;
+    float dotProduct;
+
+    // Phong lighting.
+    if (material.IsBump)
+        reflection = normalize(reflect(-lightVector, bumpProps.BumpNormal));
+    else
+        reflection = normalize(reflect(-lightVector, input.Normal));
+    dotProduct = max(0, dot(reflection, input.ViewDirection));
+
+    //// Blinn-Phong lighting
+    //reflection = normalize(lightVector + input.ViewDirection);
+    ////if (material.IsBump)
+    ////    dotProduct = max(0, dot(bumpProps.BumpNormal, reflection));
+    ////else
+    ////    dotProduct = max(0, dot(input.Normal, reflection));
+
+    //dotProduct = max(0, dot(input.Normal, reflection));
+
+    float4 result = light.Color * pow(dotProduct, material.SpecularPower);
+    if (material.HasSpecularMap)
+        result *= specularMap.Sample(textureSampler, input.TexCoord);
+
+    return result * light.Intensity;
+}
+
+float CalculateSpotCone(LightStruct light, float3 lightVector)
+{
+    float minCos = cos(light.SpotAngle);
+    float maxCos = (minCos + 1.0f) / 2.0f;
+    float cosAngle = dot(light.Direction.xyz, -lightVector);
+    return smoothstep(minCos, maxCos, cosAngle);
+}
+
+_LightCalculationResult CalculateDirectionalLight(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps,
+                            Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+ 
+    float3 lightVector = -light.Direction.xyz;
+ 
+    result.Diffuse = CalculateDiffuse(light, material, input, bumpProps, lightVector, result.DiffuseIntensity);
+    if (material.IsSpecular)
+        result.Specular = CalculateSpecular(light, material, input, bumpProps, lightVector, specularMap, textureSampler);
+ 
+    return result;
+}
+
+_LightCalculationResult CalculatePointLight(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps,
+                            Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+
+    float3 lightVector = normalize(light.Position - input.WorldPos).xyz;
+    float distance = length(lightVector);
+    lightVector = lightVector / distance;
+ 
+    float attenuation = CalculateAtt(light, distance);
+ 
+    result.Diffuse = CalculateDiffuse(light, material, input, bumpProps, lightVector, result.DiffuseIntensity) * attenuation;
+    if (material.IsSpecular)
+        result.Specular = CalculateSpecular(light, material, input, bumpProps, lightVector, specularMap, textureSampler) * attenuation;
+ 
+    return result;
+}
+
+_LightCalculationResult CalculateSpotLight(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps,
+                            Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+
+    float3 lightVector = normalize(light.Position - input.WorldPos).xyz;
+    //float3 lightVector = (Position - position).xyz;
+    float distance = length(lightVector);
+    lightVector = lightVector / distance;
+ 
+    float attenuation = CalculateAtt(light, distance);
+    float spotIntensity = CalculateSpotCone(light, lightVector);
+ 
+    result.Diffuse = CalculateDiffuse(light, material, input, bumpProps, lightVector, result.DiffuseIntensity) * attenuation * spotIntensity;
+    if (material.IsSpecular)
+        result.Specular = CalculateSpecular(light, material, input, bumpProps, lightVector, specularMap, textureSampler) * attenuation * spotIntensity;
+
+    return result;
+}
+
+_LightCalculationResult CalculateLight(LightStruct light, MaterialStruct material, _PixelShader_IN input, _BumpProperties bumpProps, Texture2D<float4> specularMap, SamplerState textureSampler)
+{
+    _LightCalculationResult result = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, 0, false };
+    float dist = 0;
+
+    if (light.IsEnabled)
+    {
+        switch (light.Type)
+        {
+            case DIRECTIONAL_LIGHT:
+                result = CalculateDirectionalLight(light, material, input, bumpProps, specularMap, textureSampler);
+                break;
+            case POINT_LIGHT:
+                dist = distance(light.Position, input.WorldPos);
+                if (dist > light.Range)
+                {
+                    result.Discarded = true;
+                    return result;
+                }
+                result = CalculatePointLight(light, material, input, bumpProps, specularMap, textureSampler);
+                break;
+            case SPOT_LIGHT:
+                dist = distance(light.Position, input.WorldPos);
+                if (dist > light.Range)
+                {
+                    result.Discarded = true;
+                    return result;
+                }
+                result = CalculateSpotLight(light, material, input, bumpProps, specularMap, textureSampler);
+                break;
+        }
+    }
+
+    return result;
+};
+
+float4 CalculateReflection(MaterialStruct material, _PixelShader_IN input, Texture2D<float4> reflectionTexture, SamplerState textureSampler, float4 textureColor)
+{
+    if (!material.IsReflective)
+        return textureColor;
+    
+    float4 reflectionTextureColor = reflectionTexture.Sample(textureSampler, input.TexCoord);
+    textureColor = max(0, min(1, lerp(textureColor, reflectionTextureColor, material.Reflectivity)));
+
+    return textureColor;
+}
+
+// ========================== GLOBAL DATA ===========================
+float4 ProcessFinalColor(float4 finalColor)
+{
+    //float gray = ((0.2126 * finalColor.r) + (0.7152 * finalColor.g) + (0.0722 * finalColor.b));
+    //return float4(gray, gray, gray, 1);
+
+    return finalColor;
+}
